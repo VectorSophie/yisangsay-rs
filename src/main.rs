@@ -31,7 +31,7 @@ async fn main() {
             };
             
             if !check_terminal_size().unwrap_or(false) {
-                println!("your terminal is too small for momoi");
+                println!("your terminal is too small for yi sang");
                 return;
             }
             
@@ -68,7 +68,7 @@ async fn main() {
         }
         Commands::Freestyle { text } => {
             if !check_terminal_size().unwrap_or(false) {
-                println!("your terminal is too small for momoi");
+                println!("your terminal is too small for yi sang");
                 return;
             }
             

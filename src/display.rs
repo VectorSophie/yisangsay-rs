@@ -55,8 +55,8 @@ pub fn create_speech_bubble_with_tail(text: &str, max_width: usize) -> Vec<Strin
     // Bottom border
     bubble.push(format!("└{}┘", "─".repeat(bubble_width + 2)));
     
-    // Add tail pointing to Momoi (left side) using / characters
-    // Add connecting lines with / pointing toward Momoi
+    // Add tail pointing to Yi Sang (left side) using / characters
+    // Add connecting lines with / pointing toward Yi Sang
     bubble.push("   /".to_string());
     bubble.push("  /".to_string());
     bubble.push(" /".to_string());

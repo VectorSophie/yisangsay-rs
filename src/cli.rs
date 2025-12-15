@@ -1,9 +1,9 @@
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-#[command(name = "momoisay")]
+#[command(name = "yisangsay")]
 #[command(
-    about = "Momoisay is a CLI program like cowsay, but instead of a talking cow, it's Saiba Momoi from Blue Archive!"
+    about = "Yisangsay is a CLI program like cowsay, but instead of a talking cow, it's Yi Sang from Limbus Company!"
 )]
 #[command(version)]
 pub struct Cli {
@@ -13,24 +13,24 @@ pub struct Cli {
 
 #[derive(Subcommand)]
 pub enum Commands {
-    /// Display Momoi saying the provided text
+    /// Display Yi Sang saying the provided text
     Say {
-        /// The text for Momoi to say
+        /// The text for Yi Sang to say
         text: String,
     },
 
-    /// Display an animated Momoi (variant 1 or 2)
+    /// Display an animated Yi Sang (variant 1 or 2)
     Animate {
-        /// The text for Momoi to say
+        /// The text for Yi Sang to say
         text: Option<String>,
         /// Animation variant number (1 or 2, default: 1)
         #[arg(short, long, default_value = "1")]
         variant_number: u8,
     },
 
-    /// Display Momoi in freestyle mode. Pretty cool for ricing btw.
+    /// Display Yi Sang in freestyle mode. Pretty cool for ricing btw.
     Freestyle {
-        /// The text for Momoi to say
+        /// The text for Yi Sang to say
         text: Option<String>,
     },
 }

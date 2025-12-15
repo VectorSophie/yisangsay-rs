@@ -1,28 +1,26 @@
-# momoisay-rs
+# yisangsay-rs
 
-Momoisay is a CLI program like cowsay, but instead of a talking cow, it's Saiba Momoi from Blue Archive!
-
-Rewrite from [Mon4sm/momoisay](https://github.com/Mon4sm/momoisay).
+Yisangsay is a CLI program like cowsay, but instead of a talking cow, it's Yi Sang from Limbus Company!
 
 ## Preview
 
-Preview of freestyle mode.
+Preview of Yi Sang animation.
 
-![Preview](./preview.gif)
+![Preview](./yi-sang-limbus-company.gif)
 
 ## Features
 
 - Written in Rust!
-- Talking ASCII art of Momoi
-- Animated ASCII art of Momoi
-- Freestyle changing animation of Momoi
+- Talking ASCII art of Yi Sang
+- Animated ASCII art of Yi Sang
+- Freestyle changing animation of Yi Sang
 
 ## Installation
 
 ### Cargo
 
 ```sh
-cargo install momoisay
+cargo install yisangsay
 ```
 
 ### Nix
@@ -30,7 +28,7 @@ cargo install momoisay
 Quick usage (one-off)
 
 ```sh
-nix run github:haruki-nikaidou/momoisay-rs -- say "Yuuka is 100kg"
+nix run github:VectorSophie/yisangsay-rs -- say "To be is to change."
 ```
 
 Install with flake
@@ -38,7 +36,7 @@ Install with flake
 ```nix
 {
   inputs = {
-    momoi-say.url  = "github:haruki-nikaidou/momoisay-rs";
+    yisang-say.url  = "github:VectorSophie/yisangsay-rs";
   };
 }
 ```
@@ -46,27 +44,27 @@ Install with flake
 
 ```nix
 { pkgs, ... }: {
-  home.packages = [ inputs.momoi-say.packages.${pkgs.system}.momoiSay ];
+  home.packages = [ inputs.yisang-say.packages.${pkgs.system}.yisangSay ];
 }
 ```
 
 ### Manually Build
 
 ```sh
-git clone https://github.com/haruki-nikaidou/momoisay-rs.git
-cd momoisay-rs
+git clone https://github.com/VectorSophie/yisangsay-rs.git
+cd yisangsay-rs
 cargo build -r
 ```
 
 ## Usage
 
 ```
-Usage: momoisay <COMMAND>
+Usage: yisangsay <COMMAND>
 
 Commands:
-  say        Display Momoi saying the provided text
-  animate    Display an animated Momoi (variant 1 or 2)
-  freestyle  Display Momoi in freestyle mode. Pretty cool for ricing btw
+  say        Display Yi Sang saying the provided text
+  animate    Display an animated Yi Sang (variant 1 or 2)
+  freestyle  Display Yi Sang in freestyle mode. Pretty cool for ricing btw
   help       Print this message or the help of the given subcommand(s)
 
 Options:

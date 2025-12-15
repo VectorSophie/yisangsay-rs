@@ -1,11 +1,11 @@
 [package]
-name = "momoisay"
+name = "yisangsay"
 version = "0.1.0"
 edition = "2024"
-description = "Momoisay is a CLI program like cowsay, but instead of a talking cow, it's Saiba Momoi from Blue Archive!"
+description = "Yisangsay is a CLI program like cowsay, but instead of a talking cow, it's Yi Sang from Limbus Company!"
 license = "GPL-3.0"
-repository = "https://github.com/haruki-nikaidou/momoisay-rs"
-authors = ["Haruki Nikaidou <nharuki@pm.me>"]
+repository = "https://github.com/VectorSophie/yisangsay-rs"
+authors = ["VectorSophie <jay7math@gmail.com>"]
 
 [dependencies]
 lazy_static = "1.4"
